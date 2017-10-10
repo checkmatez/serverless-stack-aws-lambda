@@ -1,0 +1,19 @@
+Service Information
+service: notes-app-api
+stage: prod
+region: eu-central-1
+stack: notes-app-api-prod
+api keys:
+  None
+endpoints:
+  POST - https://zjv3g36mu4.execute-api.eu-central-1.amazonaws.com/prod/notes
+  GET - https://zjv3g36mu4.execute-api.eu-central-1.amazonaws.com/prod/notes/{id}
+  GET - https://zjv3g36mu4.execute-api.eu-central-1.amazonaws.com/prod/notes
+  PUT - https://zjv3g36mu4.execute-api.eu-central-1.amazonaws.com/prod/notes/{id}
+  DELETE - https://zjv3g36mu4.execute-api.eu-central-1.amazonaws.com/prod/notes/{id}
+functions:
+  create: notes-app-api-prod-create
+  get: notes-app-api-prod-get
+  list: notes-app-api-prod-list
+  update: notes-app-api-prod-update
+  delete: notes-app-api-prod-delete
